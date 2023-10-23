@@ -71,7 +71,7 @@ def ui_info():
 	# EduXGPT - High School
 	version {__version__}
 	
-	Degree Scheduling using GPT3.
+	Degree Scheduling using GPT3. Designed for High School students. 
 	""")
 	ui_spacer(1)
 	st.write("Made by [EduX Team](https://www.edux.ai).", unsafe_allow_html=True)
@@ -127,7 +127,7 @@ def debug_index():
 	ss['debug']['index'] = d
 
 def ui_pdf_file():
-	st.write('## 2. Upload your Academic PDF Audit')
+	st.write('## 2. Upload your high school transcript')
 	disabled = not ss.get('user') or (not ss.get('api_key') and not ss.get('community_pct',0))
 	t1,t2 = st.tabs(['UPLOAD','SELECT'])
 	with t1:
@@ -195,7 +195,7 @@ def ui_hyde_prompt():
 	st.text_area('HyDE prompt', prompts.HYDE, key='hyde_prompt')
 
 def ui_question():
-	st.write('## 3. List Course Preferences and Schedule Limitations'+(f' to {ss["filename"]}' if ss.get('filename') else ''))
+	st.write('## 3. List top three colleges you want to attend and top three majors'+(f' to {ss["filename"]}' if ss.get('filename') else ''))
 	disabled = False
 	st.text_area('question', key='question', height=100, placeholder='Enter text here', help='', label_visibility="collapsed", disabled=disabled)
 
