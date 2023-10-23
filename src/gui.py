@@ -51,7 +51,7 @@ def on_api_key_change():
 	ss['debug']['storage.folder'] = ss['storage'].folder
 	ss['debug']['storage.class'] = ss['storage'].__class__.__name__
 
-on_api_key_change = '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'
+on_api_key_change = ''
 ss['community_user'] = os.getenv('COMMUNITY_USER')
 if 'user' not in ss and ss['community_user']:
 	on_api_key_change() # use community key
