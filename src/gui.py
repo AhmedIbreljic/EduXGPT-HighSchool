@@ -53,7 +53,7 @@ def on_api_key_change():
 
 ss['community_user'] = os.getenv('COMMUNITY_USER')
 if 'user' not in ss and ss['community_user']:
-	on_api_key_change(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) # use community key
+	on_api_key_change() # use community key
 
 
 # COMPONENTS
