@@ -97,7 +97,7 @@ class S3Cache(Cache):
 		prefix = kw.get('prefix') or os.getenv('S3_CACHE_PREFIX','cache/x1')
 		region = kw.get('region') or os.getenv('S3_REGION','sfo3')
 		url    = kw.get('url')    or os.getenv('S3_URL',f'https://{region}.digitaloceanspaces.com')
-		key    = os.getenv('S3_KEY','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')
+		key    = os.getenv('S3_KEY','')
 		secret = os.getenv('S3_SECRET','')
 		#
 		if not key or not secret:
