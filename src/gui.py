@@ -195,7 +195,7 @@ def ui_hyde_prompt():
 	st.text_area('HyDE prompt', prompts.HYDE, key='hyde_prompt')
 
 def ui_question():
-	st.write('## 3. List top three colleges you want to attend and top three majors'+(f' to {ss["filename"]}' if ss.get('filename') else ''))
+	st.write('## 3. What College Do You Want to Attend and What is Your Intended Major?'+(f' to {ss["filename"]}' if ss.get('filename') else ''))
 	disabled = False
 	st.text_area('question', key='question', height=100, placeholder='Enter text here', help='', label_visibility="collapsed", disabled=disabled)
 
