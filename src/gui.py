@@ -11,7 +11,6 @@ st.set_page_config(
    # layout="wide",
 )
 
-api_key = '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'
 # BOILERPLATE
 
 import streamlit as st
