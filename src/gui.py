@@ -1,12 +1,12 @@
 from PIL import Image
 import streamlit as st
 
-__version__ = "1.2.1.8"
+__version__ = "1.1.2.1"
 app_name = "EduXGPT"
 
 im = Image.open("favicon.ico")
 st.set_page_config(
-    page_title="EduXGPT",
+    page_title="EduXGPT - High School",
     page_icon=im,
    # layout="wide",
 )
@@ -68,7 +68,7 @@ def ui_spacer(n=2, line=False, next_n=0):
 
 def ui_info():
 	st.markdown(f"""
-	# EduXGPT
+	# EduXGPT - High School
 	version {__version__}
 	
 	Degree Scheduling using GPT3.
