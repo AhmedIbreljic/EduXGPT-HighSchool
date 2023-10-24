@@ -5,7 +5,6 @@ import pickle
 import zlib
 import io
 import os
-from config import OPENAI_KEY
 
 
 # pip install boto3
