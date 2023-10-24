@@ -3,6 +3,8 @@ import hashlib
 import redis
 import os
 from retry import retry
+from config import OPENAI_KEY
+
 
 def hexdigest(text):
 	return hashlib.md5(text.encode('utf8')).hexdigest()
