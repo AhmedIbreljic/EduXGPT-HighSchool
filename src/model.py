@@ -7,7 +7,6 @@ import hashlib
 import re
 import io
 import os
-from config import OPENAI_KEY
 
 import pdf
 import ai
