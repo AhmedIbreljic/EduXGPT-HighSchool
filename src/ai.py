@@ -1,6 +1,7 @@
 from ai_bricks.api import openai
 import stats
 import os
+from config import *
 
 DEFAULT_USER = os.getenv('COMMUNITY_USER','')
 
