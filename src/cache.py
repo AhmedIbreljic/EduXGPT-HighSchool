@@ -5,6 +5,8 @@ import pickle
 import zlib
 import io
 import os
+from config import *
+
 
 # pip install boto3
 import boto3
