@@ -2,6 +2,7 @@ import redis
 from time import strftime
 import os
 from retry import retry
+from config import OPENAI_KEY
 
 class Stats:
 	def __init__(self):
