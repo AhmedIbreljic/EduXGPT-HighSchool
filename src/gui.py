@@ -12,7 +12,7 @@ st.set_page_config(
    # layout="wide",
 )
 
-api_key = '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'
+api_key = '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'
 # BOILERPLATE
 
 import streamlit as st
