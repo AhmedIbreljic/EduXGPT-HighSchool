@@ -100,17 +100,13 @@ def ui_api_key():
         ss['debug']['community_pct'] = pct
     else:
         st.write('## 1. Enter your OpenAI API key')
-        st.text_input('OpenAI API key', type='password', key='api_key', on_change=on_api_key_change, label_visibility="collapsed")
+        # Create a placeholder for the API key, but set it as a password input type and hide it
+        api_key = st.text_input('OpenAI API key', type='password', key='api_key', on_change=on_api_key_change, value='', label_visibility="collapsed")
 
-def index_pdf_file():
-	if ss['pdf_file']:
-		ss['filename'] = ss['pdf_file'].name
-		if ss['filename'] != ss.get('fielname_done'): # UGLY
-			with st.spinner(f'indexing {ss["filename"]}'):
-				index = model.index_file(ss['pdf_file'], ss['filename'], fix_text=ss['fix_text'], frag_size=ss['frag_size'], cache=ss['cache'])
-				ss['index'] = index
-				debug_index()
-				ss['filename_done'] = ss['filename'] # UGLY
+        # Add a button to reveal/hide the input field
+        if st.checkbox('Show/Hide API Key', key='show_api_key'):
+            # If the checkbox is selected, reveal the input field
+            api_key
 
 def debug_index():
 	index = ss['index']
