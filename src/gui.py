@@ -37,7 +37,7 @@ from time import time as now
 # HANDLERS
 
 def on_api_key_change():
-	api_key = ss.get('api_key') or os.getenv('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')
+	api_key = ss.get('api_key') or os.getenv('')
 	model.use_key(api_key) # TODO: empty api_key
 	#
 	if 'data_dict' not in ss: ss['data_dict'] = {} # used only with DictStorage
@@ -53,7 +53,7 @@ def on_api_key_change():
 
 ss['community_user'] = os.getenv('COMMUNITY_USER')
 if 'user' not in ss and ss['community_user']:
-	on_api_key_change(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) # use community key
+	on_api_key_change() # use community key
 
 
 # COMPONENTS
