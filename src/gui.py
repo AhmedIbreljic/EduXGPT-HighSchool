@@ -1,5 +1,6 @@
 from PIL import Image
 import streamlit as st
+from ai_bricks.api import openai
 
 __version__ = "1.1.2.1"
 app_name = "EduXGPT"
