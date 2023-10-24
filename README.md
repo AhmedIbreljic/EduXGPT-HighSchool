@@ -63,7 +63,6 @@ Thank you for your interest in my application. Please be aware that this is only
 
 
 ### Environment variables used for configuration
-OPENAI_KEY = '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'
 
 
 ##### General configuration:
