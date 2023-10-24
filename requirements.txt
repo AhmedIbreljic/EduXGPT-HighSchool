@@ -1,4 +1,4 @@
-git+https://github.com/mobarski/ai-bricks.git
+git+https://github.com/AhmedIbreljic/ai-bricks.git
 streamlit
 pypdf
 scikit-learn
