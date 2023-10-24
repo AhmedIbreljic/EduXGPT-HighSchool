@@ -99,7 +99,7 @@ def ui_api_key():
 			ss['community_pct'] = pct
 			ss['debug']['community_pct'] = pct
 		with t2:
-			st.text_input('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', type='password', key='api_key', on_change=on_api_key_change, label_visibility="collapsed")
+			st.text_input('OpenAI API key', type='password', key='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', on_change=on_api_key_change, label_visibility="collapsed")
 	else:
 		st.write('## 1. Enter your OpenAI API key')
 		st.text_input('OpenAI API key', type='password', key='api_key', on_change=on_api_key_change, label_visibility="collapsed")
