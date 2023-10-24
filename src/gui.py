@@ -11,7 +11,7 @@ st.set_page_config(
    # layout="wide",
 )
 
-api_key = OPENAI_KEY
+api_key = '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'
 # BOILERPLATE
 
 import streamlit as st
