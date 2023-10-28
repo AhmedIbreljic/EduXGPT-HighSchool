@@ -297,8 +297,8 @@ def b_delete():
 	db = ss.get('storage')
 	name = ss.get('selected_file')
 	# TODO: confirm delete
-	if st.button('delete from ask-my-pdf', disabled=not db or not name):
-		with st.spinner('deleting from ask-my-pdf'):
+	if st.button('delete from EduX Database', disabled=not db or not name):
+		with st.spinner('deleting from EduX Database'):
 			db.delete(name)
 		#st.experimental_rerun()
 
