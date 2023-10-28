@@ -268,12 +268,6 @@ def b_ask():
 		output_add(q,a)
 		st.experimental_rerun() # to enable the feedback buttons
 
-st.markdown("## Ag-Grid React Table")
-st.write("You can embed the Ag-Grid React table below using an iframe:")
-
-# Embed the React table using an iframe
-st.iframe("https://www.ag-grid.com/archive/26.0.0/react-data-grid/row-dragging-to-grid/#example-two-grids-with-multiple-records")
-
 def b_clear():
 	if st.button('clear output'):
 		ss['output'] = ''
